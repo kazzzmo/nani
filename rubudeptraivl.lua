@@ -1,4 +1,3 @@
-
 local url = "https://raw.githubusercontent.com/kazzzmo/nani/refs/heads/main/RuBu_Kz_V5.lua"
 
 local ok, err = xpcall(function()
