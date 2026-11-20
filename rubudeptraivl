@@ -1,0 +1,18 @@
+
+local url = "https://raw.githubusercontent.com/kazzzmo/nani/refs/heads/main/RuBu_Kz_V5.lua"
+
+local ok, err = xpcall(function()
+    local source = game:HttpGet(url)
+    print("RuBu Kz: Đã tải", #source, "bytes")
+
+    local fn, compileError = loadstring(source)
+    assert(fn, compileError)
+
+    print("RuBu Kz: Bắt đầu chạy")
+    fn()
+    print("RuBu Kz: Hoàn tất")
+end, debug.traceback)
+
+if not ok then
+    warn("RuBu Kz ERROR:", err)
+end
