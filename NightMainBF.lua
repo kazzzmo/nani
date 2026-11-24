@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://nighthub.site/loader.lua"))()
+loadstring(game:HttpGet("https://robloxscriptbest.com/script/loader.php?script=dynamic"))()
